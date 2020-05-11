@@ -4,19 +4,23 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Manrope', 'sans-serif';
+  font-size: 125%;
   padding-left: 5%;
   flex-wrap: wrap;
+  padding-top: 5%;
+  padding-bottom: 7%;
 }
 
 .navigation-sub {
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
   align-items: flex-end;
+  padding-right: 2%;
 }
 
 .item {
   font-family: 'Manrope', 'sans-serif';
+  font-size: 100%;
   font-weight: 600;
   padding: 8%;
 }
