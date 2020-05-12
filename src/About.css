@@ -8,6 +8,7 @@
   align-items: flex-start;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
 }
 
 .aboutcontainer-sub-left {
@@ -32,9 +33,9 @@
 }
 
 .aboutphoto {
-  width: 400px;
+  width: 425px;
 }
 
 .aboutpic {
-  width: 400px;
+  width: 425px;
 }

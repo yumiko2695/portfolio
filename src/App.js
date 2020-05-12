@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import Personal from './Personal';
 import About from './About';
 import Projects from './Projects'
+import Contact from './Contact'
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Route exact path="/" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/forfun" component={Personal} />
+        <Route path="/contact" component={Contact} />
         <div className="footer">
+        <Link to="/contact" className="contact">Contact</Link>
         </div>
       </div>
     </BrowserRouter>

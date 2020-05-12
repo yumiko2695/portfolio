@@ -4,12 +4,31 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Manrope', 'sans-serif';
-  font-size: 125%;
+  font-size: 150%;
   padding-left: 5%;
   flex-wrap: wrap;
   padding-top: 2%;
   padding-bottom: 2%;
   align-items: baseline;
+  border-style: outset;
+  border-width: 15px;
+  border-color: #66FF33;
+}
+
+.navigation h1 {
+  color: #000066;
+}
+
+.navigation a:link {
+  color: #000066;
+  text-decoration: none;
+}
+.navigation a:visited {
+  color: #000066;
+}
+
+.navigation a:hover {
+  color: #66FF33;
 }
 
 .navigation-sub {

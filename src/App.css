@@ -39,3 +39,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+.footer {
+  flex-direction: column-reverse;
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  padding-bottom: 1%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  border-style: outset;
+  border-width: 15px;
+  border-color: #66FF33;
+}
+
+.contact {
+  font-family: 'Manrope', 'sans-serif';
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact:hover {
+  color: #FF00CC;
+}
+
+.footer a:visited {
+  color: #000066;
+}
