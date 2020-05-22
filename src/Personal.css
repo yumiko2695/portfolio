@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
 
-.aboutcontainer {
+.container {
   width: 100%;
   display: flex;
   font-family: 'Manrope', 'sans-serif';
@@ -9,11 +9,11 @@
   padding-bottom: 25%;
   margin-bottom: -70px;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   color: #000066;
 }
 
-.left {
+.projects {
   display: flex;
   flex: 1;
   padding-left: 2rem;
@@ -21,22 +21,15 @@
   flex-direction: column;
 }
 
-.text {
-  padding: 1rem;
-  justify-content: space-evenly;
-}
-
-.right {
+.experience {
   flex: 1;
   padding: 1rem;
 }
 
-.aboutpic {
-  width: 80%;
-}
+/*
 
 @media screen and (max-width: 768px) {
   .aboutcontainer {
     flex-direction: column;
   }
-}
+} */

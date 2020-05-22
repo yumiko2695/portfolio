@@ -1,66 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
 
+
+body {
+  min-height: 100%;
+}
+
 .App {
   text-align: center;
+  height: 100%;
+  margin-bottom: -70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-inside {
+  padding: 20px;
+  padding-bottom: 70px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  font-family: 'Manrope', sans-serif;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .footer {
-  flex-direction: column-reverse;
   display: flex;
   font-family: 'Manrope', sans-serif;
-  position: relative;
-  padding-bottom: 1%;
+  position: fixed;
+  margin-top: 70px;
+  bottom: 0;
+  height: 70px;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 50px;
+  padding: 1rem;
+  margin-top: -70px;
   text-align: center;
-  border-style: outset;
-  border-width: 15px;
+  border-bottom: outset;
+  border-right: outset;
+  border-width: 20px;
   border-color: #66FF33;
 }
 
 .contact {
   font-family: 'Manrope', 'sans-serif';
-  width: 100%;
   text-align: center;
+  width: 100%;
   text-decoration: none;
   font-size: 32px;
   font-weight: bold;

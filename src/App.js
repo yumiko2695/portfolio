@@ -13,10 +13,12 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Route exact path="/" component={Projects} />
+        <div className="app-inside">
+        <Route exact path="/projects" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/forfun" component={Personal} />
         <Route path="/contact" component={Contact} />
+        </div>
         <div className="footer">
         <Link to="/contact" className="contact">Contact</Link>
         </div>
