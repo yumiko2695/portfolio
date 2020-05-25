@@ -14,9 +14,9 @@ function About(props) {
         <h4>I love eating pizza and learning about old and new music.</h4>
         <h4>And yes, thats me.</h4>
         </div>
-
       </div>
       <div className="right">
+        <br></br>
         <br></br>
         <br></br>
         <img src="https://storage.cloud.google.com/yumi-s-house-images/10371959_661057197349318_6427329680732058134_n.jpg?authuser=1" className="aboutpic"/>

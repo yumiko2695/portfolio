@@ -26,6 +26,11 @@
   justify-content: space-evenly;
 }
 
+.text h4 {
+  font-weight: normal;
+
+}
+
 .right {
   flex: 1;
   padding: 1rem;

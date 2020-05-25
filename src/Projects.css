@@ -4,12 +4,11 @@
   width: 100%;
   display: flex;
   font-family: 'Manrope', 'sans-serif';
-  flex-direction: row;
   align-items: flex-start;
   padding-bottom: 25%;
   margin-bottom: -70px;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   color: #000066;
 }
 
@@ -17,19 +16,178 @@
   display: flex;
   flex: 1;
   padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+  flex-direction: column;
+  margin-block-end: .25em;
+  margin-block-start: .25em;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.project1 {
+  display: flex;
+  flex: 1;
   text-align: left;
   flex-direction: column;
 }
 
-.experience {
-  flex: 1;
+.project1 h2 {
+  margin-block-end: .25em;
+  margin-block-start: .25em;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: .25em;
+  margin-block-start: .25em;
+}
+
+.project-header h4 {
+  margin-block-end: .25em;
+  margin-block-start: .25em;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: .5rem;
+}
+
+p {
+  margin-block-start: .5em;
+  margin-block-end: .5em;
+}
+
+.project-description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.accordion {
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
   padding: 1rem;
 }
 
-/*
+button {
+  color: #000066;
+  border: none;
+}
+
+button.accordion:hover {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #66FF33;
+}
+
+
+ul {
+  text-align: left;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-weight: lighter;
+  font-size: 13px;
+  list-style-type: none;
+  margin-block-end: .5em;
+  margin-block-start: .5em;
+}
+
+li {
+  padding: .5em;
+}
+
+.techstack {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.website {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: bold;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.experience {
+  display: flex;
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  flex-direction: column;
+  margin-block-end: .25em;
+  margin-block-start: .25em;
+}
+
+.experience .project1 {
+  display: flex;
+  flex:1;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+}
+
+
+.title .accordion {
+  width: 100%;
+}
+
+
+.project-header h4{
+  font-weight: normal;
+}
+
+/* .project-header .role{
+  font-weight: bold;
+} */
+
+
+.title h2 {
+  width: auto;
+  text-align: left;
+}
 
 @media screen and (max-width: 768px) {
-  .aboutcontainer {
+  .container {
     flex-direction: column;
   }
-} */
+}
+
+
+@media screen and (max-width: 350px) {
+  .project-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
