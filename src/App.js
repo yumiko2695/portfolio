@@ -16,7 +16,7 @@ function App() {
         <div className="app-inside">
         <Route exact path="/projects" component={Projects} />
         <Route path="/about" component={About} />
-        <Route path="/forfun" component={Personal} />
+        <Route path="/personal" component={Personal} />
         <Route path="/contact" component={Contact} />
         </div>
         <div className="footer">
