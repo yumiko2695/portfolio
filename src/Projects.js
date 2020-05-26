@@ -96,8 +96,8 @@ class Projects extends React.Component {
           </div>
         </div>
       </div>
-      </div>
       {<Experience />}
+      </div>
     </div>
     )}
 }
