@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
 
 .container {
-  width: 60%;
-  padding-left: 20%;
-  padding-right: 20%;
   display: flex;
   font-family: 'Manrope', 'sans-serif';
   align-items: flex-start;
@@ -34,6 +31,8 @@
   flex: 1;
   text-align: left;
   flex-direction: column;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .project1 h2 {
@@ -137,6 +136,14 @@ li {
   font-weight: bold;
   padding-left: 3em;
   padding-right: 3em;
+}
+
+.website a {
+  color: #000066;
+}
+
+.website a:hover {
+  color: #66FF33;
 }
 .experience {
   display: flex;

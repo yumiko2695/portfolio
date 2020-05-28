@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
 
 .container-personal {
-  width: 90%;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding: 1em;
   display: flex;
   font-family: 'Manrope', 'sans-serif';
-  align-items: flex-start;
   padding-bottom: 25%;
   margin-bottom: -70px;
   flex-wrap: wrap;
@@ -16,14 +13,19 @@
 }
 
 .box {
-  width: 100%;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-bottom: 3em;
-  justify-content: center;
   display: flex;
   flex: 1;
+  padding: 1em;
+  padding-bottom: 3em;
+  justify-content: center;
   flex-direction: column;
+  border-bottom-style: dotted;
+  border-bottom-width: 3px;
+  border-bottom-color: #66FF33;
+  /* outline-style: dotted;
+  outline-color: #66FF33;
+  outline-width: 3px;
+  */
 }
 
 .middle {
@@ -38,12 +40,18 @@
 }
 
 .box2 {
-  width: 100%;
+  padding: 1em;
   padding-bottom: 3em;
   justify-content: center;
   display: flex;
   flex: 1;
   flex-direction: column;
+  border-bottom-style: dotted;
+  border-bottom-width: 3px;
+  border-bottom-color: #66FF33;
+  /* outline-style: dotted;
+  outline-color: #66FF33;
+  outline-width: 3px; */
 }
 
 .box2 h2 {
