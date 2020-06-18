@@ -22,6 +22,8 @@ body {
   font-family: 'Manrope', sans-serif;
   position: fixed;
   margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
   bottom: 0;
   height: 70px;
   left: 0;

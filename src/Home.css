@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
+
+#round-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -100px;
+  padding: 1em;
+}
+
+#round {
+  color: #000066;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: 'Manrope', 'sans-serif';
+  padding-left: auto;
+  padding-right: auto;
+  margin-top: auto;
+  animation: rotatelogo infinite 20s linear;
+}
+
+@keyframes rotatelogo{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+/*
+
+
+
+
+#letterOne{
+  transform:rotate(45deg)
+}
+
+#letterTwo{
+  transform:rotate(90deg)
+}
+
+#letterThree{
+  transform:rotate(135deg)
+}
+
+#letterFour{
+  transform:rotate(180deg)
+}
+
+#letterFive{
+  transform:rotate(225deg)
+}
+
+#letterSix{
+  transform:rotate(270deg)
+}
+
+#letterSeven{
+  transform:rotate(315deg)
+}
+
+#letterEight{
+  transform:rotate(360deg)
+} */

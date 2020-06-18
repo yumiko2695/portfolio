@@ -7,7 +7,7 @@ import Personal from './Personal';
 import About from './About';
 import Projects from './Projects'
 import Contact from './Contact'
-
+import Home from './Home'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/personal" component={Personal} />
         <Route path="/contact" component={Contact} />
+        <Route exact path="/" component={Home}/>
         </div>
         <div className="footer">
         <Link to="/contact" className="contact">Contact</Link>

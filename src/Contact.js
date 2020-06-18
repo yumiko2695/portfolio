@@ -2,12 +2,14 @@ import React from "react"
 import './Contact.css';
 
 
-function Personal(props) {
+function Contact(props) {
   return (
-    <div>
-      <h1>New Component</h1>
+    <div class="contact">
+      <h1>Contact Me</h1>
+      <h3>LinkedIn</h3>
+      <h3>Github</h3>
     </div>
   )
 }
 
-export default Personal;
+export default Contact;
