@@ -36,7 +36,7 @@ class Personal extends React.Component{
               <a href="http://expressionless.online" target="_blank">~~~ Expressionless.online ~~~</a>
             </div>
           <div className="right">
-            <img className="expressionless-img" src="https://storage.cloud.google.com/yumi-s-house-images/0019196702_10.jpg?authuser=1" width="300px"></img>
+            <img type="image/jpeg" className="expressionless-img" src="https://storage.cloud.google.com/yumi-s-house-images/0019196702_10.jpg?authuser=1" width="300px"></img>
           </div>
           </div>
         </div>

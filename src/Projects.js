@@ -49,12 +49,12 @@ class Projects extends React.Component {
         <div className="project-footer">
           <div className="img-container">
             <a href="https://github.com/Xcodist/GH2001-capstone" target="_blank">
-            <img src="https://storage.cloud.google.com/yumi-s-house-images/25231.svg?authuser=1" width="30px" height="30px"/>
+            <img type="image/jpeg" src="https://storage.cloud.google.com/yumi-s-house-images/25231.svg?authuser=1" width="30px" height="30px"/>
             </a>
           </div>
           <div className="img-container">
             <a href=""  target="_blank">
-            <img src="https://storage.cloud.google.com/yumi-s-house-images/Screen-Shot-2015-06-15-at-19.22.42.png?authuser=1" width="30px" height="30px"/>
+            <img type="image/jpeg" src="https://storage.cloud.google.com/yumi-s-house-images/Screen-Shot-2015-06-15-at-19.22.42.png?authuser=1" width="30px" height="30px"/>
             </a>
           </div>
         </div>
@@ -79,7 +79,7 @@ class Projects extends React.Component {
           <div className="project-footer">
           <div className="img-container">
             <a href="https://github.com/harry-potter-grace-shopper/Grace-Shopper" target="_blank">
-            <img src="https://storage.cloud.google.com/yumi-s-house-images/25231.svg?authuser=1" width="30px" height="30px"/>
+            <img type="image/jpeg" src="https://storage.cloud.google.com/yumi-s-house-images/25231.svg?authuser=1" width="30px" height="30px"/>
             </a>
           </div>
           <div className="website">
