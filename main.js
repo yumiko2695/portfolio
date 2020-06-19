@@ -1,7 +1,7 @@
 
 'use strict'
 //requiring our app
-const app = require('./server/index')
+const app = require('./server')
 
 //requireing our database
 //const {db} = require('./server/db');

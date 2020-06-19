@@ -11,7 +11,7 @@ const morgan = require('morgan');
 app.use(morgan('dev'));
 
 //static middleware = getting all the static assets (css, images ) THAT ARE IN PUBLIC
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 //parsing middleware = allows you to use req.body by parsing the request body info
 const bodyParser = require('body-parser');
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //send index HTML for any requests that dont match one of our routes
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '../build/index.html'));
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 //handle 500 error
