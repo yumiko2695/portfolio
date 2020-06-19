@@ -31,7 +31,7 @@ class Personal extends React.Component{
           <div className="middle">
             <div className="left">
               <h4>Contributing Editor</h4>
-              <p>My good friend Ben asked if I could contribute a mix for a monthly bulletin he started with his friend Dylan. I thought it was really cool and I ended up getting involved. It's been fun and  exciting -- kind of new territory for me. I help out with the mixes, musical releases, and some layout + design stuff.</p>
+              <p>My good friend Ben asked if I could contribute a mix for a monthly bulletin he started with his friend Dylan. I thought it was really cool and I ended up getting involved. It's been fun and exciting -- kind of new territory for me. I help out with the monthly mixes &amp; musical releases, and some layout + design stuff.</p>
               <br></br>
               <a href="http://expressionless.online" target="_blank">~~~ Expressionless.online ~~~</a>
             </div>

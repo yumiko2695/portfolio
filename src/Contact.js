@@ -4,11 +4,20 @@ import './Contact.css';
 
 function Contact(props) {
   return (
-    <div class="contact">
-      <h1>Contact Me</h1>
-      <h3>LinkedIn</h3>
-      <h3>Github</h3>
+    <div class="container">
+       <div class="contact">
+        <a href="https://www.linkedin.com/in/yumikomannarelli/" target="_blank">
+          <h4>LinkedIn</h4>
+        </a>
+        <a href="https://github.com/yumiko2695" target="_blank">
+          <h4>Github</h4>
+        </a>
+        <a href="mailto:helloyumikooo@gmail.com" target="_blank">
+          <h4>Email</h4>
+        </a>
     </div>
+    </div>
+
   )
 }
 

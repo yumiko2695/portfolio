@@ -5,6 +5,7 @@
   margin-right: auto;
   margin-bottom: -100px;
   padding: 1em;
+  padding-bottom: 2ex;
 }
 
 #round {
@@ -16,45 +17,24 @@
   padding-right: auto;
   margin-top: auto;
   animation: rotatelogo infinite 20s linear;
+  border: lightcoral 1px dotted;
 }
 
 @keyframes rotatelogo{
   from{ transform: rotate(0deg); }
   to{ transform: rotate(360deg); }
 }
-/*
 
-
-
-
-#letterOne{
-  transform:rotate(45deg)
+#round:hover {
+  color: #66FF33;
 }
 
-#letterTwo{
-  transform:rotate(90deg)
+#take-action {
+  padding: 6ex;
+  z-index: 2;
 }
 
-#letterThree{
-  transform:rotate(135deg)
+a {
+  font-size: 20px;
 }
 
-#letterFour{
-  transform:rotate(180deg)
-}
-
-#letterFive{
-  transform:rotate(225deg)
-}
-
-#letterSix{
-  transform:rotate(270deg)
-}
-
-#letterSeven{
-  transform:rotate(315deg)
-}
-
-#letterEight{
-  transform:rotate(360deg)
-} */

@@ -7,13 +7,11 @@ function About(props) {
       <div className="left">
         <h1>About</h1>
         <div className="text">
-        <h4>Yumiko Mannarelli. NYC.</h4>
+        <h4>Yumiko M. NYC.</h4>
         <h4>Software Engineer. Grace Hopper Alum 2020.</h4>
         <h4>Previously events at Yadastar/RBMA/Red Bull Music Festivals. </h4>
         <h4>Nortwestern Grad.</h4>
-        <h4>Pizza Lover. No deepdish allowed.</h4>
-        <h4>Music - I'm a fan of that.</h4>
-        <h4>In my spare time, I'm probably working on Expressionless Objects or enjoying memes.</h4>
+        <h4>In my spare time, I'm probably checking Bandcamp emails, sharing music with friends, working on Expressionless Objects, eating pizza or enjoying memes.</h4>
         <h4>And yes, thats me.</h4>
         </div>
       </div>

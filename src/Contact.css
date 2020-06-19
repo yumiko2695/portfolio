@@ -1,14 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
 
-.contact {
-  width: 90%;
-  margin: auto;
+.container {
   display: flex;
   font-family: 'Manrope', 'sans-serif';
+  align-items: flex-start;
   padding-bottom: 25%;
   margin-bottom: -70px;
   flex-wrap: wrap;
   flex-direction: column;
   color: #000066;
-  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  flex-direction: column;
+  margin-block-end: .25em;
+  margin-block-start: .25em;
+}
+
+a {
+  color: #000066;
+  text-decoration: initial;
+}
+
+a:visited {
+  color: #000066
+}
+
+a:hover {
+  color: #66FF33
 }
