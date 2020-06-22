@@ -4,8 +4,8 @@ import './Contact.css';
 
 function Contact(props) {
   return (
-    <div class="container">
-       <div class="contact">
+    <div class="container-contact">
+       <div class="contact-div">
         <a href="https://www.linkedin.com/in/yumikomannarelli/" target="_blank">
           <h4>LinkedIn</h4>
         </a>

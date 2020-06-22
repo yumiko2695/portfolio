@@ -16,8 +16,7 @@ function About(props) {
         </div>
       </div>
       <div className="right">
-        <img type="image/jpeg" src="https://storage.cloud.google.com/yumi-s-house-images/
-        10371959_661057197349318_6427329680732058134_n.jpg" className="aboutpic"/>
+        <img type="image/jpeg" src="https://storage.googleapis.com/yumi-s-house-images/10371959_661057197349318_6427329680732058134_n.jpg" className="aboutpic"/>
       </div>
     </div>
   )

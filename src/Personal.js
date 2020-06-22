@@ -36,13 +36,13 @@ class Personal extends React.Component{
               <a href="http://expressionless.online" target="_blank">~~~ Expressionless.online ~~~</a>
             </div>
           <div className="right">
-            <img type="image/jpeg" className="expressionless-img" src="https://storage.cloud.google.com/yumi-s-house-images/0019196702_10.jpg?authuser=1" width="300px"></img>
+            <img type="image/jpeg" className="expressionless-img" src="https://storage.googleapis.com/yumi-s-house-images/0019196702_10.jpg" width="300px"></img>
           </div>
           </div>
         </div>
         <div className="box2">
           <h2>In Your Dirty Ears</h2>
-          <p>In Your Dirty Ears started as my friend Amelia's weekly newsletter sharing new releases and old finds that she was listening to at the moment. Amelia, myself and our friend Sara have a group chat dedicated to talking about and sharing all the new releases we came across in our inboxes' neverending stream of Bandcamp emails. It only felt right that we join Amelia and contribute to the weekly newsletter in rotation.</p>
+          <p>In Your Dirty Ears started as my friend Amelia's weekly newsletter sharing new releases and old finds that she was listening to at the moment. Amelia, myself and our friend Sara have a group chat dedicated to talking about and sharing all the new releases we came across in our inboxes' neverending stream of Bandcamp emails. It only felt right that we join Amelia and contribute to the weekly newsletter in rotation. The three of us will also be starting a bi-weekly radio show. More soon.</p>
           <br></br>
           <a href="https://tinyletter.com/InYourDirtyEars" target="_blank">~~~ Sign Up Here ~~~</a>
         </div>
