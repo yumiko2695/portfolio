@@ -47,4 +47,7 @@
   .aboutcontainer {
     flex-direction: column;
   }
+  .aboutpic {
+    max-width: 700px;
+  }
 }
