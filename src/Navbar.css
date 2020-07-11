@@ -6,7 +6,7 @@
   height: 125%;
   justify-content: space-between;
   font-family: 'Manrope', 'sans-serif';
-  font-size: 150%;
+  font-size: 3vw;
   padding: 1rem;
   flex-wrap: wrap;
   align-items: baseline;
@@ -27,7 +27,7 @@
 .menu-wrap .toggler {
   position: absolute;
   top: 20px;
-  right: 80px;
+  right: 90px;
   padding: 2.5rem;
   cursor: pointer;
   z-index: 2;
@@ -40,8 +40,8 @@
   position: absolute;
   top: 25px;
   right: 80px;
-  width: 60px;
-  height: 60px;
+  width: 6vw;
+  height: 2vh;
   padding: 1rem;
   background: transparent;
   display: flex;
@@ -107,7 +107,6 @@
   display: flex;
   align-items: center;
   justify-content: right;
-  font-size: 15px;
   font-weight: bold;
   visibility: hidden;
 }
@@ -121,12 +120,12 @@
 }
 
 .menu-wrap .menu > div > div > ul > li {
-  font-size: 1.25rem;
   padding: 1rem;
  }
 
 
 .menu-wrap .menu > div > div > ul > li > a {
+  font-size: 2vw;
   transition: color 0.4s ease;
   /* background-color: #CCFFFF; */
   background-color: white;
@@ -161,7 +160,7 @@
 
 .item {
   font-family: 'Manrope', 'sans-serif';
-  font-size: 100%;
+  font-size: 2vm;
   font-weight: 600;
   padding: 8%;
 }

@@ -24,17 +24,23 @@
   margin-block-start: .25em;
 }
 
-a {
+.contact-div a {
   color: #000066;
   width: 100%;
   text-align: center;
   text-decoration: none;
+  font-size: 3vm;
 }
 
-a:visited {
-  color: #000066
+.contact-div a:visited {
+  color: #000066;
+  font-size: 2vm;
 }
 
-a:hover {
+.contact-div a:hover {
   color: #66FF33
+}
+
+.contact-div a h4 {
+  font-size: 3vw;
 }
