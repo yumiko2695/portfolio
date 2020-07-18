@@ -6,16 +6,17 @@ function Navbar(props) {
   return (
     <div className="navigation">
       <h1>Yumiko M.</h1>
-      <div class="menu-wrap">
+      <div className="menu-wrap">
         <input type="checkbox" class="toggler"/>
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
+          <div className="hamburger"><div></div></div>
+          <div className="menu">
             <div>
               <div>
                 <ul>
                   <li><a href="/projects">Experience + Projects</a></li>
                   <li><a href="/personal">For Fun</a></li>
                   <li><a href="/about">About</a></li>
+                 <li><a href="/artists">Find Artists</a></li>
                 </ul>
               </div>
             </div>
