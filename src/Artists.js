@@ -7,8 +7,7 @@ export class Artists extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      eventLink: '',
-      artists: []
+      eventLink: ''
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,21 +20,42 @@ export class Artists extends React.Component {
   handleSubmit(event) {
     this.props.getArtists(this.state.eventLink.toString())
     event.preventDefault();
-
   }
 
   render() {
-    return (
-      <div classsName='artists-container'>
-        <form onSubmit={this.handleSubmit}>
-        <label>
-        Enter Event URL Here:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-      </div>
-    )
+    const artists = this.props.artists
+    if(artists.length === 0) {
+      return (
+        <div classsName='artists-container'>
+          <form onSubmit={this.handleSubmit}>
+          <label>
+          Enter Event URL Here:
+            <input type="text" value={this.state.value} onChange={this.handleChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+        </div>
+      )
+    } else {
+      return (
+        <div classsName='artists-container'>
+          <form onSubmit={this.handleSubmit}>
+          <label>
+          Enter Event URL Here:
+            <input type="text" value={this.state.value} onChange={this.handleChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+
+        <ul>Artists:
+          {artists.map((el) =>
+            (<li>{el}</li>)
+          )}
+        </ul>
+        </div>
+      )
+    }
+
   }
 }
 
@@ -45,5 +65,8 @@ const mapDispatchToProps = dispatch => ({
   }
 })
 
+const mapStateToProps = state => ({
+  artists: state.artists
+})
 
-export default connect(null, mapDispatchToProps)(Artists);
+export default connect(mapStateToProps, mapDispatchToProps)(Artists);

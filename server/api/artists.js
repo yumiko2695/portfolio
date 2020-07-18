@@ -1,8 +1,6 @@
 const router = require('express').Router()
  const scrape = require('../../scrape/index.js')
 
-// const artists = require('../../scrape/post.csv');
-
 module.exports = router
 
 
