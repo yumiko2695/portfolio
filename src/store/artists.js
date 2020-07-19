@@ -17,7 +17,6 @@ export const getArtistsThunk = eventUrl => {
       const artists = await axios.get('/api/artists/', {params: {
         eventUrl: `${eventUrl}`
       }})
-      console.log(artists);
       dispatch(getArtists(artists.data))
     } catch(error) {
       console.log(error)

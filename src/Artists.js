@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {getArtistsThunk} from './store/artists'
 
+import ArtistInfo from './AritstInfo'
+
 
 export class Artists extends React.Component {
   constructor(props) {
@@ -47,11 +49,15 @@ export class Artists extends React.Component {
           <input type="submit" value="Submit" />
         </form>
 
-        <ul>Artists:
-          {artists.map((el) =>
-            (<li>{el}</li>)
-          )}
-        </ul>
+        <h3>Artists:
+          {artists.map((el) => {
+            return (
+              <div>
+                <h4>{el}</h4>
+                <ArtistInfo id={el}/>
+              </div>)})
+        }
+        </h3>
         </div>
       )
     }
@@ -66,7 +72,8 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const mapStateToProps = state => ({
-  artists: state.artists
+  artists: state.artists,
+  lastfmProfiles: state.lastfmProfiles
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Artists);
