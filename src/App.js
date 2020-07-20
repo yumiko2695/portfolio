@@ -9,6 +9,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import Home from './Home'
 import Artists from './Artists'
+import MoreInfo from './MoreInfo'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/personal" component={Personal} />
         <Route path="/contact" component={Contact} />
         <Route exact path="/artists" component={Artists} />
+        <Route path="/artists/moreinfo/:artist"  component={MoreInfo} />
         <Route exact path="/" component={Home}/>
         </div>
         <div className="footer">

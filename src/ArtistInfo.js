@@ -10,7 +10,7 @@ export class ArtistInfo extends React.Component {
       clicked: false,
       profile: {}
     }
-    this.toggleDiv = this.toggleDiv.bind(this);
+    //this.toggleDiv = this.toggleDiv.bind(this);
   }
 
   toggleDiv(event) {

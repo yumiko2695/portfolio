@@ -7,9 +7,18 @@ function scraper(searchUrl) {
     .then(response => response.text())
     .then(body => {
       const $ = cheerio.load(body);
-      const lineupMedium = $('.lineup.medium');
-      const lineUpHTML =  lineupMedium.html();
-      let arr = lineUpHTML.split("<br>");
+      let lineup = $('.lineup.medium');
+      if(lineup.html() === null) {
+        lineup = $('.lineup.large')
+      }
+      const lineUpHTML = lineup.html();
+      let re= /<br>|,/
+      let arr = lineUpHTML.split(re);
+      arr = arr.map(el => {
+        if(el!==undefined) {
+          return el;
+        }
+      })
       arr = arr.map((str, i) => {
         if(i!==0) {
           return str.slice(1,str.length)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link }  from 'react-router-dom'
 import {getArtistsThunk} from './store/artists'
-import ArtistInfo from './ArtistInfo'
 import {getLastfmProfileThunk} from './store/getlastfm'
 
 
@@ -14,23 +14,20 @@ class Artists extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(event) {
     this.setState({...this.state, eventLink: event.target.value})
-  };
+  }
 
   handleSubmit(event) {
     this.props.getArtists(this.state.eventLink.toString());
     event.preventDefault();
-  };
-  handleClick(event) {
-    this.getLastfmProfile(event.target.name);
   }
 
   render() {
     const artist = this.props.artists;
+    console.log(this.props);
       return (
         <div>
           <div classsName='artists-container'>
@@ -47,8 +44,7 @@ class Artists extends React.Component {
                 {artist.map(el => (
                   <div>
                     <h4>{el}</h4>
-                    <button name={el} onClick={this.handleClick}></button>
-                    <ArtistInfo id={el} key={el} name={el}/>
+                    <Link name={el} to={`/artists/moreinfo/${el}`} onClick={(event) => {this.props.getLastfmProfile(event.target.name)}}>About</Link>
                   </div>
                 ))}
             </div>)}
@@ -59,7 +55,7 @@ class Artists extends React.Component {
 
 const mapStateToProps = state => ({
   artists: state.artists
-});
+})
 
 const mapDispatchToProps = dispatch => ({
   getArtists: (url) => {
@@ -68,6 +64,6 @@ const mapDispatchToProps = dispatch => ({
   getLastfmProfile: (artist) => {
     dispatch(getLastfmProfileThunk(artist))
   }
-});
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Artists);

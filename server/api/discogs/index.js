@@ -16,6 +16,7 @@ router.get('/authorize', function(req, res){
     'http:locahost:5000/oauth/callback', // ?what do i put here?
     function(err, requestedData){
       requestData = requestedData;
+      console.log(requestData)
       // Persist "requestData" here so that the callback handler can
       // access it later after returning from the authorize url
       res.redirect(requestData.authorizeUrl);
@@ -29,6 +30,7 @@ router.get('/callback', function(req, res){
     function(err, accessedData){
       accessData = accessedData
       console.log(accessData)
+      search(accessData);
       // Persist "accessData" here for following OAuth calls
       res.send('Received access token!');
     }
@@ -37,18 +39,18 @@ router.get('/callback', function(req, res){
 router.get('/identity', function(req, res){
   var dis = new Discogs(accessData);
   dis.getIdentity(function(err, data){
+    console.log(data)
     res.send(data);
-    console.log()
+
   });
 });
 
-
 function search(){
-    fetch('https://api.discogs.com/database/search?q=cher&type=artist&artist=cher', accessData)
-    .then(response => response.json())
-    .then(data => {
-          console.log(data)
-       })
+  fetch('https://api.discogs.com/database/search?q=cher&type=artist&artist=cher', accessData)
+  .then(response => response.json())
+  .then(data => {
+        console.log(data)
+     })
 }
 search();
 

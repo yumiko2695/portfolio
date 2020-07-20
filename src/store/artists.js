@@ -1,6 +1,4 @@
 import axios from 'axios'
-import cors from 'cors'
-const cheerio = require('cheerio');
 //import scrape from '../../scrape'
 
 const GET_ARTISTS = 'GET_ARTISTS'
