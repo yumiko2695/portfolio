@@ -20,7 +20,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/personal" component={Personal} />
         <Route path="/contact" component={Contact} />
-        <Route path="/artists" component={Artists} />
+        <Route exact path="/artists" component={Artists} />
         <Route exact path="/" component={Home}/>
         </div>
         <div className="footer">

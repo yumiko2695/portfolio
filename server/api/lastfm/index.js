@@ -1,13 +1,13 @@
 const router = require('express').Router()
-const searchForArtist = require('./apicall')
+const script = require('./script.js')
 
 module.exports = router
 
 
 router.get('/', async (req, res, next) => {
   try {
-    const artist = await req.params.artist.toLowerCase();
-    let result = await searchForArtist(artist);
+    const artist = await req.query.artist
+    let result = await script.search(artist);
     res.send(result);
   } catch(e) {
     console.log(e)

@@ -1,6 +1,7 @@
 const router = require('express').Router()
 router.use('/artists', require('./artists'))
 router.use('/lastfm', require('./lastfm'))
+router.use('/discogs', require('./discogs'))
 
 
 router.use((req, res, next) => {

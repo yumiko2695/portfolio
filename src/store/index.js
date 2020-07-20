@@ -4,11 +4,13 @@ import thunkMiddleware from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import getArtistsReducer from './artists'
-import getLastfmProfilesReducer from "./lastfm";
+import getLastfmProfilesReducer from "./getlastfm";
+import setLastfmProfileReducer   from './setlastfm';
 
 const reducer = combineReducers({
   artists: getArtistsReducer,
   lastfmProfiles: getLastfmProfilesReducer,
+  current: setLastfmProfileReducer,
 })
 
 const middleware = composeWithDevTools(
