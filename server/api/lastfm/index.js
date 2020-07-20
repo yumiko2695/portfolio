@@ -4,10 +4,11 @@ const script = require('./script.js')
 module.exports = router
 
 
-router.get('/', async (req, res, next) => {
+router.get('/:profile', async (req, res, next) => {
   try {
-    const artist = await req.query.artist
-    let result = await script.search(artist);
+    const profile = await req.params.profile;
+    console.log(profile)
+    let result = await script.search(profile);
     res.send(result);
   } catch(e) {
     console.log(e)

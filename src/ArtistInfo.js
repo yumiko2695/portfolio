@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {getLastfmProfileThunk} from './store/getlastfm'
+import {getLastfmProfileThunk, setLastfmProfileThunk} from './store/getlastfm'
 
 
 export class ArtistInfo extends React.Component {
@@ -8,18 +8,24 @@ export class ArtistInfo extends React.Component {
     super(props)
     this.state = {
       clicked: false,
+      profile: {}
     }
     this.toggleDiv = this.toggleDiv.bind(this);
   }
 
   toggleDiv(event) {
-    this.setState({clicked: !this.state.clicked})
-    this.props.getLastfmProfile(event.target.name)
+    this.props.setLastfmProfile(this.props.id);
+    this.setState({...this.state, clicked: !this.state.clicked})
     event.preventDefault()
+  }
+  componentDidMount() {
+    this.props.getLastfmProfile(this.props.id);
+    this.setState(this.setState({clicked: !this.state.clicked, profile: this.props.lastfmProfiles.current})
+    )
   }
 
 render() {
-   console.log(this.props);
+   console.log('this is the state profile', this.state.profile);
   return (
     <div>
       <button name={this.props.el} onClick={this.toggleDiv}>
@@ -27,7 +33,8 @@ render() {
       </button>
       {this.state.clicked
         ? <div key={this.props.el}>
-          <p>hello</p>
+          {/* <p>{this.props.profile.data.artist.name}</p>
+          <p>{this.state.profile.data.artist.url}</p> */}
         </div>
       : <div>not clicked</div>}
     </div>
@@ -41,11 +48,11 @@ const mapState = state => ({
 const mapDispatchToProps = dispatch => ({
   getLastfmProfile: (artist) => {
     dispatch(getLastfmProfileThunk(artist))
+  },
+  setLastfmProfile: (artist) => {
+    dispatch(setLastfmProfileThunk(artist))
   }
 });
 
 export default connect(mapState, mapDispatchToProps)(ArtistInfo)
 
-
-      {/* <button name={this.props.id} onClick={this.handleClick}>Click for more info</button>
-      {this.state.clicked ? <ArtistMoreInfo id={this.state.id}/> : <div></div>} */}

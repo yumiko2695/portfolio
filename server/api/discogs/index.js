@@ -1,11 +1,9 @@
-
 const fetch = require('node-fetch');
 const router = require('express').Router()
 // const discogsscript = require('./discogsscript.js')
 
 module.exports = router
 
-'use strict';
 var Discogs = require('disconnect').Client;
 
 // Authenticate by user token
@@ -27,14 +25,11 @@ var db = new Discogs().database();
 // 	console.log(data);
 // });
 
-// fetch('https://api.discogs.com/database/search?q={query}&{?type,title,release_title,credit,artist,anv,label,genre,style,country,year,format,catno,barcode,track,submitter,contributor}')
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data)
-//   })
-
-
-
+fetch('https://api.discogs.com/database/search?q=cher&type=artist&artist=cher')
+ .then(response => response.json())
+ .then(data => {
+    console.log(data)
+ })
 
 
 // router.get('/', async (req, res, next) => {

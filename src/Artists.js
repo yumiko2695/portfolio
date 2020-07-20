@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {getArtistsThunk} from './store/artists'
 import ArtistInfo from './ArtistInfo'
+import {getLastfmProfileThunk} from './store/getlastfm'
+
 
 
 class Artists extends React.Component {
@@ -12,6 +14,7 @@ class Artists extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(event) {
@@ -22,6 +25,9 @@ class Artists extends React.Component {
     this.props.getArtists(this.state.eventLink.toString());
     event.preventDefault();
   };
+  handleClick(event) {
+    this.getLastfmProfile(event.target.name);
+  }
 
   render() {
     const artist = this.props.artists;
@@ -41,6 +47,7 @@ class Artists extends React.Component {
                 {artist.map(el => (
                   <div>
                     <h4>{el}</h4>
+                    <button name={el} onClick={this.handleClick}></button>
                     <ArtistInfo id={el} key={el} name={el}/>
                   </div>
                 ))}
@@ -57,6 +64,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   getArtists: (url) => {
     dispatch(getArtistsThunk(url))
+  },
+  getLastfmProfile: (artist) => {
+    dispatch(getLastfmProfileThunk(artist))
   }
 });
 
