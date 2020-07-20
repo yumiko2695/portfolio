@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link }  from 'react-router-dom'
 import {getArtistsThunk} from './store/artists'
 import {getLastfmProfileThunk} from './store/getlastfm'
+import {getDiscogsReleasesThunk} from './store/discogs';
 
 
 
@@ -44,7 +45,10 @@ class Artists extends React.Component {
                 {artist.map(el => (
                   <div>
                     <h4>{el}</h4>
-                    <Link name={el} to={`/artists/moreinfo/${el}`} onClick={(event) => {this.props.getLastfmProfile(event.target.name)}}>About</Link>
+                    <Link name={el} to={`/artists/moreinfo/${el}`} onClick={(event) => {
+                      this.props.getLastfmProfile(event.target.name)
+                      this.props.getDiscogsReleases(event.target.name)
+                      }}>About</Link>
                   </div>
                 ))}
             </div>)}
@@ -63,6 +67,9 @@ const mapDispatchToProps = dispatch => ({
   },
   getLastfmProfile: (artist) => {
     dispatch(getLastfmProfileThunk(artist))
+  },
+  getDiscogsReleases: (artist) => {
+    dispatch(getDiscogsReleasesThunk(artist))
   }
 })
 

@@ -5,10 +5,12 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 import getArtistsReducer from './artists'
 import lastfmProfilesReducer from "./getlastfm";
+import getDiscogsReleasesReducer from './discogs'
 
 const reducer = combineReducers({
   artists: getArtistsReducer,
   lastfmProfiles: lastfmProfilesReducer,
+  discogsReleases: getDiscogsReleasesReducer
 })
 
 const middleware = composeWithDevTools(

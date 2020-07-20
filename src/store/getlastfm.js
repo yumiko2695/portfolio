@@ -1,5 +1,4 @@
 import axios from 'axios'
-require('../secrets')
 
 const GET_LASTFM_PROFILE = 'GET_LASTFM_PROFILE'
 
@@ -9,7 +8,6 @@ const getLastfmProfile = artistObj => ({
 })
 
 export const getLastfmProfileThunk = (artist) => {
-  console.log(artist)
   return async dispatch => {
     try {
       const profile = await axios.get(`/api/lastfm/${artist}`)
