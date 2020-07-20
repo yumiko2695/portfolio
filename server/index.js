@@ -4,7 +4,6 @@ const path = require('path')
 const helmet = require('helmet')
 const morgan = require('morgan')
 const session = require('express-session')
-const { default: fetch } = require('node-fetch')
 const PORT = process.env.PORT || 5000
 
 
@@ -15,7 +14,6 @@ express()
   .use(express.urlencoded({extended:true}))
   .use(cors())
   .use('/api', require('./api'))
-  .use('/oauth', require('./oauth'))
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'src'))
   .set('view engine', 'html')
