@@ -1,5 +1,24 @@
 import React from 'react';
 
+export function ProjectInfo0 (props)  {
+  return (
+    <div className="dropdown-content">
+            <ul>
+            <li>Scoped the project from idea to launch. Assessed internal and external stakeholder needs working directly with the founder, artists, and ops.
+          </li>
+          <li>Built an express server including routes for additional security and allowing for varying permissions depending on different user classes.
+          </li>
+          <li>
+          Designed and implemented UX flows, including drag and drop functionality that automatically updates the schedule.
+          </li>
+          <li>Led a sprint on a tight schedule. Sourced, evaluated, and implemented new patterns and database options in accordance to project needs.
+          </li>
+          </ul>
+            </div>
+  )
+}
+
+
 export function ProjectInfo1 (props)  {
   return (
     <div className="dropdown-content">
@@ -32,4 +51,4 @@ export function ProjectInfo2 (props) {
   )
 }
 
-export default {ProjectInfo1, ProjectInfo2}
+export default {ProjectInfo0, ProjectInfo1, ProjectInfo2}

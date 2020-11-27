@@ -15,7 +15,7 @@ class Home extends React.Component {
         <h1 id="round"> WELCOME TO MY WEBSITE -</h1>
       </div>
       <div id="take-action">
-        <a href="https://docs.google.com/presentation/d/1ZXL_OdDNowYzMDVV0a5gAT3OZJgQkg4JzHC5jkPOWNM/edit#slide=id.p" target="_blank">~~~ TAKE ACTION TO DISMANTLE SYSTEMIC RACISM, DEFUND + ABOLISH THE POLICE &amp; BE A BETTER ALLY ~~~</a>
+        <a href="https://pfw.guide/" target="_blank">~~~ TAKE ACTION TO DISMANTLE SYSTEMIC RACISM, DEFUND THE POLICE &amp; BE A BETTER ALLY by Patia's Fantasy World~~~</a>
       </div>
       </div>
     )

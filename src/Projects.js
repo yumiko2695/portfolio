@@ -1,7 +1,7 @@
 import React from "react"
 import './Projects.css';
 import './Accordion'
-import {ProjectInfo1, ProjectInfo2} from './ProjectsInfo'
+import {ProjectInfo0, ProjectInfo1, ProjectInfo2} from './ProjectsInfo'
 import Experience from './Experience'
 
 class Projects extends React.Component {
@@ -9,6 +9,7 @@ class Projects extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      project0: false,
       project1: false,
       project2: false,
     }
@@ -18,7 +19,10 @@ class Projects extends React.Component {
   toggleDiv = (event) => {
     if(event.target.name === 'project1') {
       this.setState({...this.state, project1: !this.state.project1})
-    } else {
+    } else if(event.target.name === 'project0') {
+      this.setState({...this.state, project0: !this.state.project0})
+    }
+    else {
       this.setState({...this.state, project2: !this.state.project2})
     }
   }
@@ -27,7 +31,38 @@ class Projects extends React.Component {
     return (
       <div className="container">
       <div className="projects">
-      <h1>Projects</h1>
+      <h1>Experience</h1>
+      <div className="project1">
+        <h2>Currents.fm</h2>
+        <div className="project-header">
+        <h4 className="role">Fullstack Developer</h4>
+          <h4>August-September 2020</h4>
+        </div>
+        <div className="project-body">
+          <div className="project-description">
+          <p>Built and managed the launch of a new internal React application for Currents.fm’s online livestream events which allows users to create, manage, and schedule livestreams sourced from many online platforms.
+          </p>
+          </div>
+          <div className="dropdown">
+            <button className="accordion" name="project0" onClick={this.toggleDiv}>More Info...</button>
+            {this.state.project0 ? <ProjectInfo0/> : <div></div>}
+          </div>
+          <p className="techstack">Node.js | React | React Hooks | Express | Firebase | React-modal | React-beautiful-dnd | React-geocode | React-modal
+          </p>
+        </div>
+        <div className="project-footer">
+          <div className="img-container">
+            <a href="https://github.com/Xcodist/GH2001-capstone" target="_blank">
+            <img type="image/svg+xml" src="https://storage.googleapis.com/yumi-s-house-images/25231.svg" width="30px" height="30px"/>
+            </a>
+          </div>
+          <div className="img-container">
+            <a href=""  target="_blank">
+            <img type="image/png" src="https://storage.googleapis.com/yumi-s-house-images/Screen-Shot-2015-06-15-at-19.22.42.png" width="30px" height="30px"/>
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="project1">
         <h2>AltCart</h2>
         <div className="project-header">
