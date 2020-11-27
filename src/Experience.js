@@ -30,7 +30,7 @@ export class Experience extends React.Component {
   render() {
     return (
       <div>
-      <h1>Experience</h1>
+      <h1>Previous Work + Studies</h1>
       <div className="project1">
         <div className="experience-container">
           <div className="title">
