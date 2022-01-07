@@ -6,17 +6,24 @@ import CircleType from 'circletype'
 class Home extends React.Component {
 
   componentDidMount() {
-    new CircleType(document.getElementById('round'))
+    new CircleType(document.getElementById('one'))
+    new CircleType(document.getElementById('two'))
+    new CircleType(document.getElementById('three'))
   }
   render() {
     return (
       <div>
-      <div id="round-container">
-        <h1 id="round"> WELCOME TO MY WEBSITE -</h1>
+        <div id="container">
+        <div className="round-container">
+        <h1 className="round" id='one'> WELCOME TO MY WEBSITE -</h1>
       </div>
-      <div id="take-action">
-        <a href="https://pfw.guide/" target="_blank">~~~ TAKE ACTION TO DISMANTLE SYSTEMIC RACISM, DEFUND THE POLICE &amp; BE A BETTER ALLY by Patia's Fantasy World~~~</a>
+        <div className="round-container">
+        <h1 className="round" id='two'> WELCOME TO MY WEBSITE -</h1>
       </div>
+      <div className="round-container">
+        <h1 className="round" id='three'> WELCOME TO MY WEBSITE -</h1>
+      </div>
+        </div>
       </div>
     )
   }

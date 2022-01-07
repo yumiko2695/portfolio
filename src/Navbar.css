@@ -5,7 +5,7 @@
   width: auto;
   height: 125%;
   justify-content: space-between;
-  font-family: 'Manrope', 'sans-serif';
+  font-family: 'Times New Roman', 'sans-serif';
   font-size: 3vw;
   padding: 1rem;
   flex-wrap: wrap;
@@ -159,7 +159,7 @@
 }
 
 .item {
-  font-family: 'Manrope', 'sans-serif';
+  font-family: 'Times New Roman', 'sans-serif';
   font-size: 2vm;
   font-weight: 600;
   padding: 8%;

@@ -3,7 +3,7 @@
 .aboutcontainer {
   width: 100%;
   display: flex;
-  font-family: 'Manrope', 'sans-serif';
+  font-family: 'Times New Roman', 'sans-serif';
   flex-direction: row;
   align-items: flex-start;
   padding-bottom: 25%;
